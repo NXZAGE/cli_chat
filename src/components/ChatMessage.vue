@@ -1,7 +1,9 @@
 <template>
 <div class="chat-message">
-  <div class="info">Ivan 21.12.2019 05:00:50</div>
-  Hello, World!!!
+  <div class="info">
+    <slot name="username"/> <slot name="time"/>
+  </div>
+  <slot name="text"/>
 </div>
 </template>
 
